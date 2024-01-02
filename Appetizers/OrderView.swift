@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct OrderView: View {
+    @Environment(\.scenePhase) var scenePhase
+    
     var body: some View {
+        
         NavigationStack {
             Text("OrderView")
                 .navigationTitle("🧾 Orders")
