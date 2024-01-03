@@ -38,7 +38,7 @@ final class NetworkManager {
         let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, response, error in // data, response, error are all optionals
             // so we are going to unwrap all those optionals and handle them accordingly:
             
-            guard let _ = error else {
+            if let _ = error { // if error has a value :
                 completed(.failure(.unableToComplete)) // (ex. wifi not working)
                 return
             }
