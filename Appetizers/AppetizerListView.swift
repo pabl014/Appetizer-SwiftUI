@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AppetizerListView: View {
 
-    var viewModel = AppetizerListViewModel()
+    @Bindable var viewModel = AppetizerListViewModel()
     
     var body: some View {
         
@@ -21,6 +21,11 @@ struct AppetizerListView: View {
         }
         .onAppear(){
             viewModel.getAppetizers()
+        }
+        .alert(item: $viewModel.alertItem) { alertItem in
+            Alert(title: alertItem.title,
+                  message: alertItem.message,
+                  dismissButton: alertItem.dismissButton)
         }
     }
 }
