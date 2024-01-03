@@ -5,7 +5,6 @@
 //  Created by Paweł Rudnik on 03/01/2024.
 //
 
-import Foundation
 import SwiftUI
 import Observation // https://www.youtube.com/watch?v=EK7SthdWV2w
 
