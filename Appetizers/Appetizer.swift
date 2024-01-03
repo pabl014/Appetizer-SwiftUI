@@ -10,7 +10,7 @@ import Foundation
 
 // mirroring the structure of the json: https://seanallen-course-backend.herokuapp.com/swiftui-fundamentals/appetizers
 
-struct AppetizerResponse {
+struct AppetizerResponse: Decodable {
     let request: [Appetizer]
 }
 
