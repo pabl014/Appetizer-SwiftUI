@@ -8,31 +8,19 @@
 import SwiftUI
 
 struct AppetizerListView: View {
-    
-    @State private var appetizers: [Appetizer] = []
+
+    var viewModel = AppetizerListViewModel()
     
     var body: some View {
+        
         NavigationStack {
-            List(appetizers) { appetizer in
+            List(viewModel.appetizers) { appetizer in
                 AppetizerListCell(appetizer: appetizer)
             }
             .navigationTitle("🍟 Appetizers")
         }
         .onAppear(){
-            getAppetizers()
-        }
-    }
-    
-    func getAppetizers() {
-        NetworkManager.shared.getAppetizers { result in
-            DispatchQueue.main.async {
-                switch result {
-                case .success(let appetizers): // let appetizers -> we are giving a variable name for what we get back here
-                    self.appetizers = appetizers // self.appetizers : line 12, = appetizers : line above
-                case .failure(let error):
-                    print(error.localizedDescription)
-                }
-            }
+            viewModel.getAppetizers()
         }
     }
 }
