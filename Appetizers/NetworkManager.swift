@@ -5,7 +5,6 @@
 //  Created by Paweł Rudnik on 02/01/2024.
 //
 
-import Foundation
 import UIKit
 
 final class NetworkManager {
