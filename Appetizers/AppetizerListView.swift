@@ -12,7 +12,6 @@ struct AppetizerListView: View {
     @Bindable var viewModel = AppetizerListViewModel()
     
     var body: some View {
-        
         NavigationStack {
             List(viewModel.appetizers) { appetizer in
                 AppetizerListCell(appetizer: appetizer)

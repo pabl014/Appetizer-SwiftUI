@@ -21,25 +21,25 @@ import Observation // https://www.youtube.com/watch?v=EK7SthdWV2w
                 
                 switch result {
                     
-                case .success(let appetizers): // let appetizers -> we are giving a variable name for what we get back here
-                    
-                    self.appetizers = appetizers // self.appetizers : major object, = appetizers : line above
-                    
-                case .failure(let error):
-                    
-                    switch error {
+                    case .success(let appetizers): // let appetizers -> we are giving a variable name for what we get back here
                         
-                    case .invalidURL:
-                        alertItem = AlertContext.invalidURL
+                        self.appetizers = appetizers // self.appetizers : major object, = appetizers : line above
                         
-                    case .invalidResponse:
-                        alertItem = AlertContext.invalidResponse
+                    case .failure(let error):
                         
-                    case .invalidData:
-                        alertItem = AlertContext.invalidData
-                        
-                    case .unableToComplete:
-                        alertItem = AlertContext.unableToComplete
+                        switch error {
+                            
+                        case .invalidURL:
+                            alertItem = AlertContext.invalidURL
+                            
+                        case .invalidResponse:
+                            alertItem = AlertContext.invalidResponse
+                            
+                        case .invalidData:
+                            alertItem = AlertContext.invalidData
+                            
+                        case .unableToComplete:
+                            alertItem = AlertContext.unableToComplete
                     }
                 }
             }
