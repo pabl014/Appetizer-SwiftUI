@@ -6,11 +6,13 @@
 //
 
 import Foundation
+import UIKit
 
 final class NetworkManager {
     
     //singleton:
     static let shared = NetworkManager()
+    private let cache = NSCache<NSString, UIImage>() // key-value pair, our identfier will be a string and at that identifier in the cache is going to be a UIImage
     
     static let baseURL = "https://seanallen-course-backend.herokuapp.com/swiftui-fundamentals/"
     private let appetizerURL = baseURL + "appetizers"
@@ -61,6 +63,40 @@ final class NetworkManager {
             } catch {
                 completed(.failure(.invalidData))
             }
+        }
+        
+        task.resume()
+    }
+    
+    // downloading image, we are passing images' url, this network call will return closure that's going to either have a UIImage or nil
+    func downloadImage(fromURLString urlString: String, completed: @escaping (UIImage?) -> Void) {
+        
+        let cacheKey = NSString(string: urlString)
+        
+        // if there is image in cache (previously it was downloaded) then take it
+        if let image = cache.object(forKey: cacheKey) {
+            completed(image)
+            return
+        }
+        
+        guard let url = URL(string: urlString) else {
+            completed(nil)
+            return
+        }
+        
+        
+        //is sth goes wrong we don't care about the errors so we don't handle response and error
+        //(if things go wrong we'll just show placeholder
+        let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, response, error in
+            
+            // if i have good data -> great, if i have good data let's try to initialize an image from that data
+            guard let data = data, let image = UIImage(data: data) else {
+                completed(nil)
+                return
+            }
+            
+            // let's put that image in cache
+            self.cache.setObject(image, forKey: cacheKey)
         }
         
         task.resume()
