@@ -13,6 +13,8 @@ import Observation // https://www.youtube.com/watch?v=EK7SthdWV2w
     var appetizers: [Appetizer] = []
     var alertItem: AlertItem?
     var isLoading = false
+    var isShowingDetail = false
+    var selectedAppetizer: Appetizer?
     
     func getAppetizers() {
         
