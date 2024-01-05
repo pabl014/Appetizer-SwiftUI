@@ -67,7 +67,6 @@ struct NutritionInfo: View {
     let title: String
     let value: Int
     
-    
     var body: some View {
         VStack(spacing: 5) {
             Text(title)
@@ -77,6 +76,10 @@ struct NutritionInfo: View {
                 .foregroundStyle(.secondary)
                 .fontWeight(.semibold)
                 .italic()
+                + Text(" g")
+                    .foregroundColor(.secondary)
+                    .fontWeight(.semibold)
+                    .italic()
         }
     }
 }
