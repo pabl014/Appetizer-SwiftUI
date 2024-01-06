@@ -16,5 +16,5 @@ extension View {
     }
 }
 
-// usage: 
-//.addBorder(Color.white, width: 1, cornerRadius: 10)
+/// usage:
+/// .addBorder(Color.white, width: 1, cornerRadius: 10)
