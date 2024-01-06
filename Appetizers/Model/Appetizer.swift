@@ -36,5 +36,36 @@ struct MockData {
                                            protein: 98,
                                            carbs: 97)
     
-    static let appetizers = [sampleAppetizer, sampleAppetizer, sampleAppetizer, sampleAppetizer,]
+    static let appetizers      = [sampleAppetizer, sampleAppetizer, sampleAppetizer, sampleAppetizer]
+    
+    //MARK: - OrderView Test Data
+    static let orderItemOne    = Appetizer(id: 0001,
+                                           name: "Test Appetizer One",
+                                           description: "This is the description for my appetizer. It's tasty af",
+                                           price: 9.99,
+                                           imageURL: "asian-flank-steak.jpg",
+                                           calories: 99,
+                                           protein: 98,
+                                           carbs: 97)
+    
+    static let orderItemTwo    = Appetizer(id: 0002,
+                                           name: "Test Appetizer Two",
+                                           description: "This is the description for my appetizer. It's tasty af",
+                                           price: 9.99,
+                                           imageURL: "asian-flank-steak.jpg",
+                                           calories: 99,
+                                           protein: 98,
+                                           carbs: 97)
+    
+    static let orderItemThree  = Appetizer(id: 0003,
+                                           name: "Test Appetizer Three",
+                                           description: "This is the description for my appetizer. It's tasty af",
+                                           price: 9.99,
+                                           imageURL: "asian-flank-steak.jpg",
+                                           calories: 99,
+                                           protein: 98,
+                                           carbs: 97)
+    
+    static let orderItems      = [orderItemOne, orderItemTwo, orderItemThree]
+    
 }
