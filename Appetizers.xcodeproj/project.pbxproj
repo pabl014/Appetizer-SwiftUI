@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE1B48D72B4B5B0300CA8ACC /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1B48D62B4B5B0300CA8ACC /* EmptyState.swift */; };
 		FE4D39AA2B44692700B782AC /* AppetizersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4D39A92B44692700B782AC /* AppetizersApp.swift */; };
 		FE4D39AC2B44692700B782AC /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4D39AB2B44692700B782AC /* AppetizerTabView.swift */; };
 		FE4D39AE2B44692800B782AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE4D39AD2B44692800B782AC /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE1B48D62B4B5B0300CA8ACC /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
 		FE4D39A62B44692700B782AC /* Appetizers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appetizers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE4D39A92B44692700B782AC /* AppetizersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizersApp.swift; sourceTree = "<group>"; };
 		FE4D39AB2B44692700B782AC /* AppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTabView.swift; sourceTree = "<group>"; };
@@ -70,6 +72,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE1B48D52B4B5AA400CA8ACC /* Empty States */ = {
+			isa = PBXGroup;
+			children = (
+				FE1B48D62B4B5B0300CA8ACC /* EmptyState.swift */,
+			);
+			path = "Empty States";
+			sourceTree = "<group>";
+		};
 		FE4D399D2B44692700B782AC = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +205,7 @@
 		FE4D39D82B47578300B782AC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FE1B48D52B4B5AA400CA8ACC /* Empty States */,
 				FE4D39E02B481B0500B782AC /* Buttons */,
 				FE4D39DB2B4757A500B782AC /* Image */,
 				FE4D39DA2B47579900B782AC /* Cells */,
@@ -320,6 +331,7 @@
 				FE4D39CE2B472E3700B782AC /* RemoteImage.swift in Sources */,
 				FE4D39E42B481C3D00B782AC /* XDismissButton.swift in Sources */,
 				FE4D39DD2B4759C600B782AC /* AppetizerDetailView.swift in Sources */,
+				FE1B48D72B4B5B0300CA8ACC /* EmptyState.swift in Sources */,
 				FE4D39AA2B44692700B782AC /* AppetizersApp.swift in Sources */,
 				FE4D39E22B481B2500B782AC /* APButton.swift in Sources */,
 				FE4D39C82B45C11500B782AC /* Alert.swift in Sources */,
