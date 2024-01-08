@@ -6,15 +6,15 @@
 //
 
 import SwiftUI
-import Observation // https://www.youtube.com/watch?v=EK7SthdWV2w
+//import Observation // https://www.youtube.com/watch?v=EK7SthdWV2w
 
-@Observable final class AppetizerListViewModel {
+final class AppetizerListViewModel: ObservableObject {
     
-    var appetizers: [Appetizer] = []
-    var alertItem: AlertItem?
-    var isLoading = false
-    var isShowingDetail = false
-    var selectedAppetizer: Appetizer?
+    @Published var appetizers: [Appetizer] = []
+    @Published var alertItem: AlertItem?
+    @Published var isLoading = false
+    @Published var isShowingDetail = false
+    @Published var selectedAppetizer: Appetizer?
     
     func getAppetizers() {
         

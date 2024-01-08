@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct AppetizerListView: View {
-
-    @Bindable var viewModel = AppetizerListViewModel()
+    
+    @StateObject var viewModel = AppetizerListViewModel()
  
     var body: some View {
         ZStack {
             NavigationStack {
                 List(viewModel.appetizers) { appetizer in
                     AppetizerListCell(appetizer: appetizer)
+                        //.listRowSeparator(.hidden)
+                        //.listRowSeparatorTint(.brandPrimary, edges: .all)
                         .onTapGesture {
                             viewModel.selectedAppetizer = appetizer
                             viewModel.isShowingDetail = true

@@ -32,6 +32,7 @@
 		FE4D39E62B48414D00B782AC /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4D39E52B48414D00B782AC /* AccountViewModel.swift */; };
 		FE4D39E82B48463300B782AC /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4D39E72B48463300B782AC /* String+Ext.swift */; };
 		FE4D39EA2B48A4A600B782AC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4D39E92B48A4A600B782AC /* User.swift */; };
+		FEC471A92B4C8E7300757548 /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC471A82B4C8E7300757548 /* CustomModifiers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		FE4D39E52B48414D00B782AC /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		FE4D39E72B48463300B782AC /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		FE4D39E92B48A4A600B782AC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FEC471A82B4C8E7300757548 /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +215,7 @@
 				FE4D39DB2B4757A500B782AC /* Image */,
 				FE4D39DA2B47579900B782AC /* Cells */,
 				FE4D39D92B47578B00B782AC /* UIKitComponents */,
+				FEC471A82B4C8E7300757548 /* CustomModifiers.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 				FE4D39B82B4469B200B782AC /* AppetizerListView.swift in Sources */,
 				FE4D39E82B48463300B782AC /* String+Ext.swift in Sources */,
 				FE1B48D92B4C1E2700CA8ACC /* Order.swift in Sources */,
+				FEC471A92B4C8E7300757548 /* CustomModifiers.swift in Sources */,
 				FE4D39BC2B4469E500B782AC /* OrderView.swift in Sources */,
 				FE4D39EA2B48A4A600B782AC /* User.swift in Sources */,
 			);
