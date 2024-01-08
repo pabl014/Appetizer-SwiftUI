@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FE1B48D72B4B5B0300CA8ACC /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1B48D62B4B5B0300CA8ACC /* EmptyState.swift */; };
+		FE1B48D92B4C1E2700CA8ACC /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1B48D82B4C1E2700CA8ACC /* Order.swift */; };
 		FE4D39AA2B44692700B782AC /* AppetizersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4D39A92B44692700B782AC /* AppetizersApp.swift */; };
 		FE4D39AC2B44692700B782AC /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4D39AB2B44692700B782AC /* AppetizerTabView.swift */; };
 		FE4D39AE2B44692800B782AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE4D39AD2B44692800B782AC /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		FE1B48D62B4B5B0300CA8ACC /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
+		FE1B48D82B4C1E2700CA8ACC /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		FE4D39A62B44692700B782AC /* Appetizers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appetizers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE4D39A92B44692700B782AC /* AppetizersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizersApp.swift; sourceTree = "<group>"; };
 		FE4D39AB2B44692700B782AC /* AppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTabView.swift; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 			children = (
 				FE4D39BD2B44964700B782AC /* Appetizer.swift */,
 				FE4D39E92B48A4A600B782AC /* User.swift */,
+				FE1B48D82B4C1E2700CA8ACC /* Order.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				FE4D39C82B45C11500B782AC /* Alert.swift in Sources */,
 				FE4D39B82B4469B200B782AC /* AppetizerListView.swift in Sources */,
 				FE4D39E82B48463300B782AC /* String+Ext.swift in Sources */,
+				FE1B48D92B4C1E2700CA8ACC /* Order.swift in Sources */,
 				FE4D39BC2B4469E500B782AC /* OrderView.swift in Sources */,
 				FE4D39EA2B48A4A600B782AC /* User.swift in Sources */,
 			);

@@ -9,7 +9,8 @@ import SwiftUI
 
 struct OrderView: View {
     
-    @State private var orderItems = MockData.orderItems
+    @EnvironmentObject var order: Order
+    //@State private var orderItems = MockData.orderItems
     
     var body: some View {
 
@@ -18,12 +19,12 @@ struct OrderView: View {
                 VStack {
                     List {
                         // we don't need to pass an id in ForEach beacuse we conform to Identifiable protocol in Appetizer.swift
-                        ForEach(orderItems) { appetizer in
+                        ForEach(order.items) { appetizer in
                             AppetizerListCell(appetizer: appetizer)
                         }
                         // swipe to delete: chosen item at indexSet index will be deleted
                         .onDelete(perform: { indexSet in
-                            deleteItems(at: indexSet)
+                            order.deleteItems(at: indexSet)
                         })
                         //.onDelete(perform: deleteItems)
                     }
@@ -32,26 +33,22 @@ struct OrderView: View {
                     Button {
                         print("Order placed")
                     } label: {
-                        APButton(title: "$99.99 - Place Order")
+                        APButton(title: "$ \(order.totalPrice, specifier: "%.2f") - Place Order")
                     }
                     .padding(.bottom, 30)
                 }
                 
-                if orderItems.isEmpty {
+                if order.items.isEmpty {
                     EmptyState(imageName: "empty-order",
                                message: "You have no items in your order. \nPlease add an appetizer!")
                 }
             }
             .navigationTitle("🧾 Orders")
         }
-        
-    }
-    
-    func deleteItems(at offesets: IndexSet){
-        orderItems.remove(atOffsets: offesets)
     }
 }
 
 #Preview {
     OrderView()
+        .environmentObject(Order())
 }
