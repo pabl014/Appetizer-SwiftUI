@@ -26,9 +26,10 @@ struct AppetizerListView: View {
                 .navigationTitle("🍟 Appetizers")
                 .disabled(viewModel.isShowingDetail)
             }
-            .onAppear(){
+            .task { //made for making a network call when the view loads
                 viewModel.getAppetizers()
             }
+            
             .blur(radius: viewModel.isShowingDetail ? 20 : 0)
             
             if viewModel.isShowingDetail {
