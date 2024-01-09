@@ -113,7 +113,7 @@ final class NetworkManager {
         let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, response, error in
             
             // if i have good data -> great, if i have good data let's try to initialize an image from that data
-            guard let data = data, let image = UIImage(data: data) else {
+            guard let data, let image = UIImage(data: data) else {
                 completed(nil)
                 return
             }

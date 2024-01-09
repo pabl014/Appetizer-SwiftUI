@@ -13,11 +13,27 @@ struct AppetizerListCell: View {
     
     var body: some View {
         HStack {
-            AppetizerRemoteImage(urlString: appetizer.imageURL)
-                //.resizable()
-                .scaledToFit()
-                .frame(width: 120, height: 90)
-                .cornerRadius(10)
+//            AppetizerRemoteImage(urlString: appetizer.imageURL)
+//                //.resizable()
+//                .scaledToFit()
+//                .frame(width: 120, height: 90)
+//                .cornerRadius(10)
+            // !!! no cache support !!!
+            AsyncImage(url: URL(string: appetizer.imageURL)) { image in
+                image
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 120, height: 90)
+                    .cornerRadius(10)
+                
+            } placeholder: {
+                Image("food-placeholder")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 120, height: 90)
+                    .cornerRadius(10)
+            }
+
             
             VStack(alignment: .leading, spacing: 5) {
                 

@@ -31,7 +31,7 @@ final class AccountViewModel: ObservableObject {
     
     func retrieveUser() {
         // we want to make sure that there is some data in user defaults
-        guard let userData = userData else {
+        guard let userData else {
             return
         }
         
