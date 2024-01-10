@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE1478A42B4F3D0E00C53B0F /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1478A32B4F3D0E00C53B0F /* Date+Ext.swift */; };
 		FE1B48D72B4B5B0300CA8ACC /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1B48D62B4B5B0300CA8ACC /* EmptyState.swift */; };
 		FE1B48D92B4C1E2700CA8ACC /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1B48D82B4C1E2700CA8ACC /* Order.swift */; };
 		FE4D39AA2B44692700B782AC /* AppetizersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4D39A92B44692700B782AC /* AppetizersApp.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE1478A32B4F3D0E00C53B0F /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		FE1B48D62B4B5B0300CA8ACC /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
 		FE1B48D82B4C1E2700CA8ACC /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		FE4D39A62B44692700B782AC /* Appetizers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appetizers.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -184,6 +186,7 @@
 				FE4D39CB2B46E1C800B782AC /* Color+Ext.swift */,
 				FE4D39DE2B4761E300B782AC /* View+Ext.swift */,
 				FE4D39E72B48463300B782AC /* String+Ext.swift */,
+				FE1478A32B4F3D0E00C53B0F /* Date+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				FE4D39BA2B4469C800B782AC /* AccountView.swift in Sources */,
 				FE4D39CA2B46DB6000B782AC /* LoadingView.swift in Sources */,
 				FE4D39AC2B44692700B782AC /* AppetizerTabView.swift in Sources */,
+				FE1478A42B4F3D0E00C53B0F /* Date+Ext.swift in Sources */,
 				FE4D39C22B44A5D800B782AC /* NetworkManager.swift in Sources */,
 				FE4D39E62B48414D00B782AC /* AccountViewModel.swift in Sources */,
 				FE4D39CE2B472E3700B782AC /* RemoteImage.swift in Sources */,
